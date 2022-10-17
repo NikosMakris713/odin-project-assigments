@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="main.css">
+      <script src="script.js" defer></script>
+      <title>Rock Paper Scissors</title>
+      <link rel="icon" type="image/x-icon" href="favicon.png">
+</head>
+
+<body>
+      <header>
+            <h1 class='center-text accent'>Rock Paper Scissors</h1>
+      </header>
+      <main>
+
+            <section class='website-container'>
+                  <h2 class='center-text' id='score-update'>First to three wins</h2>
+                  <section class='website-container flex-row-center'>
+                        <button class='sign-button'">✊</button>
+                <button class=" sign-button">✋</button>
+                        <button class="sign-button">✌</button>
+                  </section>
+                  <div class='website-container'>
+                        <section class='flex-row-center'>
+                              <table id='score-table-player'>
+                                    <tr>
+                                          <th scope="col">You</th>
+                                    </tr>
+                                    <tr class='game-info'>
+                                          <td id='player-score' data-label="You">0</td>
+                                    </tr>
+                              </table>
+                              <table id='score-table-computer'>
+                                    <tr>
+                                          <th scope="col">Computer</th>
+                                    </tr>
+                                    <tr class='game-info'>
+                                          <td id='computer-score' data-label="Computer">0</td>
+                                    </tr>
+                              </table>
+                        </section>
+                  </div>
+                  <div class='website-container'>
+                        <button id='new-game-button'>New Game</button>
+                  </div>
+
+      </main>
+      <footer>
+            <section class='website-container flex-row-center'>
+                  <h3>Copyright @ 2022 Nikos</h3>
+                  <a href='https://wrpsa.com/the-official-rules-of-rock-paper-scissors/' target="_blank" rel="noopener noreferrer"'>How to play</a>
+        </section>
+    </footer>
+</body>
+
+</html>
