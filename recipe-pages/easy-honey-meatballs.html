@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link href="font-awesome/css/all.min.css" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+      <link href="css/styles.css" rel="stylesheet">
+      <script src="js/script.js" defer></script>
+      <link rel="icon" type="image/x-icon" href="/images/favicon.png">
+      <title>Easy honey meatballs</title>
+</head>
+
+<body>
+      <header>
+            <nav id="navigation-desktop" class="colored-section">
+                  <section class="topnav width-wrapper">
+                        <section class="logo">
+                              <a href="index.html">
+                                    <img src="images/logo.png" alt="logo">
+                              </a>
+                        </section>
+                        <section class="menu-elemets">
+                              <a href="pasta-primavera.html">Pasta primavera</a>
+                              <a href="easy-honey-meatballs.html">Easy honey meatballs</a>
+                              <a href="kaema-curry.html">Kaema-curry</a>
+                        </section>
+                  </section>
+            </nav>
+
+            <nav id="navigation-mobile" class="colored-section">
+                  <section class="topnav width-wrapper">
+                        <section class="logo">
+                              <a href="index.html">
+                                    <img src="images/logo.png" alt="logo">
+                              </a>
+                        </section>
+                        <section class="hamburger-lines" onclick="clickMenu()">
+                              <span class="line" id="line1"></span>
+                              <span class="line" id="line2"></span>
+                              <span class="line" id="line3"></span>
+                        </section>
+                  </section>
+                  <section id="menu-elements-mobile" class="main-background">
+                        <a href="pasta-primavera.html">Pasta primavera</a>
+                        <a href="easy-honey-meatballs.html">Easy honey meatballs</a>
+                        <a href="kaema-curry.html">Kaema-curry</a>
+                  </section>
+            </nav>
+      </header>
+      <main class="width-wrapper">
+
+            <div class='responsive-grid single-recipe'>
+                  <div class='image-infobar-container'>
+                        <img class="recipe-image" src="images/easy-honey-meatballs.jpeg" alt="Easy honey meatballs dish">
+                        <div class="colored-section infobar">
+                              <h3 class="m-0">Easy honey meatballs</h3>
+                              <div class='actions-container'>
+                                    <h4 class='m-0 text-secondary'>By Marco Alain Ducasse</h4>
+                                    <div class='actions'>
+                                          <button aria-label="like button" class="social-action">
+                                                <i class="far fa-heart fa-lg"></i>
+                                          </button>
+                                          <button aria-label="messages button" class="social-action">
+                                                <i class="fa-regular fa-message fa-lg"></i>
+                                          </button>
+                                          <button aria-label="add to collection button" class="social-action">
+                                                <i class="fa-solid fa-book fa-lg"></i>
+                                          </button>
+                                          <button aria-label="share repice button" class="social-action">
+                                                <i class="fa-solid fa-share fa-lg"></i>
+                                          </button>
+                                          <button aria-label="more options button" class="social-action">
+                                                <i class="fa-solid fa-ellipsis-vertical fa-lg"></i>
+                                          </button>
+                                    </div>
+                              </div>
+                        </div>
+                  </div>
+                  <div class='colored-section recipe-tabs-container'>
+                        <div class=' recipe-tabs'>
+                              <button class="recipe-tab active">Ingredients</button>
+                              <button class="recipe-tab">Steps</button>
+                              <button class="recipe-tab">Nutrition</button>
+                        </div>
+                        <div id='ingredients-content'>
+                              <table id='ingredients-table' style=" width: 100%;">
+                                    <tbody>
+                                          <thead>
+                                                <th scope="col">Measurment</th>
+                                                <th scope="col">Ingredient</th>
+                                          </thead>
+                                          <tr class='ingredient-measurement'>
+                                                <td data-label="Measurment">250 g</td>
+                                                <td data-label="Ingredient">mixed ground meat</td>
+                                          </tr>
+                                          <tr class='ingredient-measurement'>
+                                                <td data-label="Measurment">1</td>
+                                                <td data-label="Ingredient">scallion</td>
+                                          </tr>
+                                          <tr class='ingredient-measurement'>
+                                                <td data-label="Measurment">15 g</td>
+                                                <td data-label="Ingredient">ginger</td>
+                                          </tr>
+                                          <tr class='ingredient-measurement'>
+                                                <td data-label="Measurment">1</td>
+                                                <td data-label="Ingredient">garlic</td>
+                                          </tr>
+                                          <tr class='ingredient-measurement'>
+                                                <td data-label="Measurment">4 tbsp</td>
+                                                <td data-label="Ingredient">honey</td>
+                                          </tr>
+                                          <tr class='ingredient-measurement'>
+                                                <td data-label="Measurment">3 tbsp</td>
+                                                <td data-label="Ingredient">soy sauce</td>
+                                          </tr>
+                                          <tr class='ingredient-measurement'>
+                                                <td data-label="Measurment">1 tbsp</td>
+                                                <td data-label="Ingredient">rice vinegar</td>
+                                          </tr>
+                                          <tr class='ingredient-measurement'>
+                                                <td data-label="Measurment">200 g</td>
+                                                <td data-label="Ingredient">jasmine rice</td>
+                                          </tr>
+                                          <tr class='ingredient-measurement'>
+                                                <td data-label="Measurment">240 ml</td>
+                                                <td data-label="Ingredient">water</td>
+                                          </tr>
+                                          <tr class='ingredient-measurement'>
+                                                <td data-label="Measurment">1 tbsp</td>
+                                                <td data-label="Ingredient">toasted sesame oil</td>
+                                          </tr>
+                                          <tr class='ingredient-measurement'>
+                                                <td data-label="Measurment">1 tbsp</td>
+                                                <td data-label="Ingredient">vegetable oil (for frying)</td>
+                                          </tr>
+                                    </tbody>
+                              </table>
+                        </div>
+                        <div id='steps-content'>
+                              <section class='recipe-step'>
+                                    <h4>Step 1</h4>
+                                    <p>Preheat oven to 200°C/425°F. Thinly slice scallion, set some aside for garnish, then mince the remaining scallion.
+                                          Peel ginger and garlic. For the glaze, add honey, most of the soy sauce, and rice vinegar to a small bowl.
+                                          Grate over approx. ⅓ of the ginger and mix to combine.
+                                    </p>
+                              </section>
+                              <section class='recipe-step'>
+                                    <h4>Step 2</h4>
+                                    <p>
+                                          Wash and rinse the rice in a fine sieve until the water runs clear, then transfer to a pot with a lid. Add water, cover with a lid, and bring to a boil.
+                                          Once boiling, reduce heat to low and cook for approx. 10 min. After the cooking time, remove from heat, keeping covered, and set aside.
+                                    </p>
+                              </section>
+                              <section class='recipe-step'>
+                                    <h4>Step 3</h4>
+                                    <p>
+                                          In the meantime, add ground meat to a large bowl along with scallions, toasted sesame oil, and remaining soy sauce.
+                                          Use a fine grater to grate remaining ginger and garlic into the bowl. Mix gently until well combined.
+                                          Then use your hands to roll the mixture into evenly sized meatballs about the size of a whole walnut and place them onto a baking sheet.
+                                    </p>
+                              </section>
+                              <section class='recipe-step'>
+                                    <h4>Step 4</h4>
+                                    <p>
+                                          Transfer the meatballs to the preheated oven and bake at 200°C/425°F until cooked through, approx. 8 min., brushing with the honey-soy glaze halfway through.
+                                          Then turn on the grill function of your oven, brush the meatballs with more glaze, and grill for approx. 3 min., or until the meatballs turn nicely brown on top.
+                                          Remove from the oven and brush again with remaining glaze. Serve meatballs with rice and garnish with sliced scallion as desired. Enjoy!
+                                    </p>
+                              </section>
+                        </div>
+                        <div id='nutrition-content'>
+                              <table id='nutrition-table' style=" width: 100%;">
+                                    <tbody>
+                                          <thead>
+                                                <th scope="col">Nutrients</th>
+                                                <th scope="col">Amount</th>
+                                          </thead>
+                                          <tr class='nutrient-value'>
+                                                <td data-label="Measurment">Total calories</td>
+                                                <td data-label="Ingredient">996</td>
+                                          </tr>
+                                          <tr class='nutrient-value'>
+                                                <td data-label="Measurment">Fat</td>
+                                                <td data-label="Ingredient">42 g</td>
+                                          </tr>
+                                          <tr class='nutrient-value'>
+                                                <td data-label="Measurment">Protein</td>
+                                                <td data-label="Ingredient">32 g</td>
+                                          </tr>
+                                          <tr class='nutrient-value'>
+                                                <td data-label="Measurment">Carb</td>
+                                                <td data-label="Ingredient">122 g</td>
+                                          </tr>
+                                    </tbody>
+                              </table>
+                        </div>
+                  </div>
+            </div>
+            <section class="recipe-suggestions-container">
+                  <h2 class='heading-centered accent'>You might also want to try</h2>
+                  <section class='recipe-suggestions'>
+                        <article class="image-infobar-container">
+                              <img class="recipe-image" src="images/pasta-primavera.jpeg" alt="Pasta primavera dish">
+                              <section class="colored-section infobar">
+                                    <div class="recipe-details">
+                                          <a href=''>
+                                                <h3 class="m-0">Pasta primavera</h3>
+                                          </a>
+                                          <h4 class="m-0 text-secondary">By Marco Pierre White</h4>
+                                          <h4 class="m-0 text-secondary">Liked by 4263 people</h4>
+                                    </div>
+                              </section>
+                        </article>
+
+                        <article class="image-infobar-container">
+                              <img class="recipe-image" src="images/keema-curry.jpeg" alt="Kaema curry dish">
+                              <section class="colored-section infobar">
+                                    <div class="recipe-details">
+                                          <a href='kaema-curry.html'>
+                                                <h3 class="m-0">Keema curry</h3>
+                                          </a>
+                                          <h4 class="m-0 text-secondary"> By Martin Berasategui</h4>
+                                          <h4 class="m-0 text-secondary">Liked by 3001 people</h4>
+                                    </div>
+                              </section>
+                        </article>
+                  </section>
+            </section>
+      </main>
+      <footer class="colored-section">
+            <section class="footer width-wrapper">
+                  <section class="logo">
+                        <a href="index.html">
+                              <img src="images/logo.png" alt="logo">
+                        </a>
+                  </section>
+                  <section class="flex">
+                        <a aria-label="Website developer Github profile" href="https://github.com/NikosMakris713">
+                              <i class="fab fa-github fa-2x"></i>
+                        </a>
+                  </section>
+            </section>
+            <a aria-label="Website developer Github profile" href="https://github.com/NikosMakris713">
+                  <h5 class="heading-centered m-0">Developed by Nikos Makris713</h5>
+            </a>
+      </footer>
+</body>
+
+</html>

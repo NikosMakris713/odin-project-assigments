@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link href="font-awesome/css/all.min.css" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+      <link href="css/styles.css" rel="stylesheet">
+      <script src="js/script.js" defer></script>
+      <link rel="icon" type="image/x-icon" href="/images/favicon.png">
+      <title>Kaema Curry</title>
+</head>
+
+<body>
+      <header>
+            <nav id="navigation-desktop" class="colored-section">
+                  <section class="topnav width-wrapper">
+                        <section class="logo">
+                              <a href="index.html">
+                                    <img src="images/logo.png" alt="logo">
+                              </a>
+                        </section>
+                        <section class="menu-elemets">
+                              <a href="pasta-primavera.html">Pasta primavera</a>
+                              <a href="easy-honey-meatballs.html">Easy honey meatballs</a>
+                              <a href="kaema-curry.html">Kaema-curry</a>
+                        </section>
+                  </section>
+            </nav>
+
+            <nav id="navigation-mobile" class="colored-section">
+                  <section class="topnav width-wrapper">
+                        <section class="logo">
+                              <a href="index.html">
+                                    <img src="images/logo.png" alt="logo">
+                              </a>
+                        </section>
+                        <section class="hamburger-lines" onclick="clickMenu()">
+                              <span class="line" id="line1"></span>
+                              <span class="line" id="line2"></span>
+                              <span class="line" id="line3"></span>
+                        </section>
+                  </section>
+                  <section id="menu-elements-mobile" class="main-background">
+                        <a href="pasta-primavera.html">Pasta primavera</a>
+                        <a href="easy-honey-meatballs.html">Easy honey meatballs</a>
+                        <a href="kaema-curry.html">Kaema-curry</a>
+                  </section>
+            </nav>
+      </header>
+      <main class="width-wrapper">
+
+            <div class='responsive-grid single-recipe'>
+                  <div class='image-infobar-container'>
+                        <img class="recipe-image" src="images/easy-honey-meatballs.jpeg" alt="Easy honey meatballs dish">
+                        <div class="colored-section infobar">
+                              <h3 class="m-0">Kaema curry</h3>
+                              <div class='actions-container'>
+                                    <h4 class='m-0 text-secondary'>By Martin Berasategui</h4>
+                                    <div class='actions'>
+                                          <button aria-label="like button" class="social-action">
+                                                <i class="far fa-heart fa-lg"></i>
+                                          </button>
+                                          <button aria-label="messages button" class="social-action">
+                                                <i class="fa-regular fa-message fa-lg"></i>
+                                          </button>
+                                          <button aria-label="add to collection button" class="social-action">
+                                                <i class="fa-solid fa-book fa-lg"></i>
+                                          </button>
+                                          <button aria-label="share repice button" class="social-action">
+                                                <i class="fa-solid fa-share fa-lg"></i>
+                                          </button>
+                                          <button aria-label="more options button" class="social-action">
+                                                <i class="fa-solid fa-ellipsis-vertical fa-lg"></i>
+                                          </button>
+                                    </div>
+                              </div>
+                        </div>
+                  </div>
+                  <div class='colored-section recipe-tabs-container'>
+                        <div class=' recipe-tabs'>
+                              <button class="recipe-tab active">Ingredients</button>
+                              <button class="recipe-tab">Steps</button>
+                              <button class="recipe-tab">Nutrition</button>
+                        </div>
+                        <div id='ingredients-content'>
+                              <table id='ingredients-table' style=" width: 100%;">
+                                    <tbody>
+                                          <thead>
+                                                <th scope="col">Measurment</th>
+                                                <th scope="col">Ingredient</th>
+                                          </thead>
+                                          <tr class='ingredient-measurement'>
+                                                <td data-label="Measurment">450 g</td>
+                                                <td data-label="Ingredient"> ground beef</td>
+                                          </tr>
+                                          <tr class='ingredient-measurement'>
+                                                <td data-label="Measurment">400 g</td>
+                                                <td data-label="Ingredient">potatoes</td>
+                                          </tr>
+                                          <tr class='ingredient-measurement'>
+                                                <td data-label="Measurment">1 tsp</td>
+                                                <td data-label="Ingredient">ground turmeric</td>
+                                          </tr>
+                                          <tr class='ingredient-measurement'>
+                                                <td data-label="Measurment">3 tsp</td>
+                                                <td data-label="Ingredient">garam masala</td>
+                                          </tr>
+                                          <tr class='ingredient-measurement'>
+                                                <td data-label="Measurment">1</td>
+                                                <td data-label="Ingredient">onion</td>
+                                          </tr>
+                                          <tr class='ingredient-measurement'>
+                                                <td data-label="Measurment">4 toes</td>
+                                                <td data-label="Ingredient">garlic</td>
+                                          </tr>
+                                          <tr class='ingredient-measurement'>
+                                                <td data-label="Measurment">20 g</td>
+                                                <td data-label="Ingredient">ginger</td>
+                                          </tr>
+                                          <tr class='ingredient-measurement'>
+                                                <td data-label="Measurment">200 g</td>
+                                                <td data-label="Ingredient">jasmine rice</td>
+                                          </tr>
+                                          <tr class='ingredient-measurement'>
+                                                <td data-label="Measurment">2</td>
+                                                <td data-label="Ingredient">green chillies</td>
+                                          </tr>
+                                          <tr class='ingredient-measurement'>
+                                                <td data-label="Measurment">1 tbsp</td>
+                                                <td data-label="Ingredient">oil</td>
+                                          </tr>
+                                          <tr class='ingredient-measurement'>
+                                                <td data-label="Measurment">1 tbsp</td>
+                                                <td data-label="Ingredient">butter</td>
+                                          </tr>
+                                          <tr class='ingredient-measurement'>
+                                                <td data-label="Measurment">2 tbsp</td>
+                                                <td data-label="Ingredient">tomato paste</td>
+                                          </tr>
+                                          <tr class='ingredient-measurement'>
+                                                <td data-label="Measurment">500 ml</td>
+                                                <td data-label="Ingredient">water</td>
+                                          </tr>
+                                          <tr class='ingredient-measurement'>
+                                                <td data-label="Measurment">150 g</td>
+                                                <td data-label="Ingredient">peas</td>
+                                          </tr>
+                                          <tr class='ingredient-measurement'>
+                                                <td data-label="Measurment">150 g</td>
+                                                <td data-label="Ingredient">salt</td>
+                                          </tr>
+                                          <tr class='ingredient-measurement'>
+                                                <td data-label="Measurment">150 g</td>
+                                                <td data-label="Ingredient">sugar</td>
+                                          </tr>
+                                          <tr class='ingredient-measurement'>
+                                                <td data-label="Measurment">150 g</td>
+                                                <td data-label="Ingredient">pepper</td>
+                                          </tr>
+                                          <tr class='ingredient-measurement'>
+                                                <td data-label="Measurment">150 g</td>
+                                                <td data-label="Ingredient">coriander</td>
+                                          </tr>
+                                          <tr class='ingredient-measurement'>
+                                                <td data-label="Measurment">150 g</td>
+                                                <td data-label="Ingredient">lemon</td>
+                                          </tr>
+                                          <tr class='ingredient-measurement'>
+                                                <td data-label="Measurment">150 g</td>
+                                                <td data-label="Ingredient">basmati rice</td>
+                                          </tr>
+                                    </tbody>
+                              </table>
+                        </div>
+                        <div id='steps-content'>
+                              <section class='recipe-step'>
+                                    <h4>Step 1</h4>
+                                    <p>Finely dice the onion. Then crush the garlic cloves with the flat side of the knife.
+                                          Chop the ginger and finely chop the chillies. Then peel and quarter the potatoes.
+                                    </p>
+                              </section>
+                              <section class='recipe-step'>
+                                    <h4>Step 2</h4>
+                                    <p>
+                                          Heat the oil and butter in a large saucepan with a lid on medium-high. Add the onions, ginger and garlic,
+                                          season with a pinch of salt and sauté for about 5 minutes. Now add the minced meat, sauté on high and
+                                          break up with a wooden spoon. Season with salt and continue frying until the meat is nicely browned.
+                                    </p>
+                              </section>
+                              <section class='recipe-step'>
+                                    <h4>Step 3</h4>
+                                    <p>
+                                          Add the green chili, ground turmeric and garam masala and continue frying for approx. 1 min.
+                                          Now add the tomato paste and sauté for another 2 minutes. Add the potatoes, stir well and deglaze with water.
+                                          Bring to the boil, reduce the heat and simmer, covered, for approx. 20 minutes.
+                                    </p>
+                              </section>
+                              <section class='recipe-step'>
+                                    <h4>Step 4</h4>
+                                    <p>
+                                          Add the peas and simmer for another 10 minutes until the peas are done.
+                                          Season the curry with salt, sugar, pepper and lemon juice as needed.
+                                          Garnish with fresh coriander and serve with basmati rice. Enjoy your meal!
+                                    </p>
+                              </section>
+                        </div>
+                        <div id='nutrition-content'>
+                              <table id='nutrition-table' style=" width: 100%;">
+                                    <tbody>
+                                          <thead>
+                                                <th scope="col">Nutrients</th>
+                                                <th scope="col">Amount</th>
+                                          </thead>
+                                          <tr class='nutrient-value'>
+                                                <td data-label="Measurment">Total calories</td>
+                                                <td data-label="Ingredient">492</td>
+                                          </tr>
+                                          <tr class='nutrient-value'>
+                                                <td data-label="Measurment">Fat</td>
+                                                <td data-label="Ingredient">29 g</td>
+                                          </tr>
+                                          <tr class='nutrient-value'>
+                                                <td data-label="Measurment">Protein</td>
+                                                <td data-label="Ingredient">25 g</td>
+                                          </tr>
+                                          <tr class='nutrient-value'>
+                                                <td data-label="Measurment">Carb</td>
+                                                <td data-label="Ingredient">33 g</td>
+                                          </tr>
+                                    </tbody>
+                              </table>
+                        </div>
+                  </div>
+            </div>
+            <section class="recipe-suggestions-container">
+                  <h2 class='heading-centered accent'>You might also want to try</h2>
+                  <section class='recipe-suggestions'>
+                        <article class="image-infobar-container">
+                              <img class="recipe-image" src="images/pasta-primavera.jpeg" alt="Pasta primavera dish">
+                              <section class="colored-section infobar">
+                                    <div class="recipe-details">
+                                          <a href=''>
+                                                <h3 class="m-0">Pasta primavera</h3>
+                                          </a>
+                                          <h4 class="m-0 text-secondary">By Marco Pierre White</h4>
+                                          <h4 class="m-0 text-secondary">Liked by 4263 people</h4>
+                                    </div>
+                              </section>
+                        </article>
+
+                        <article class="image-infobar-container">
+                              <img class="recipe-image" src="images/easy-honey-meatballs.jpeg" alt="Easy honey meatballs dish">
+                              <section class="colored-section infobar">
+                                    <div class="recipe-details">
+                                          <a href='kaema-curry.html'>
+                                                <h3 class="m-0">Easy honey meatballs</h3>
+                                          </a>
+                                          <h4 class="m-0 text-secondary"> By Marco Alain Ducasse</h4>
+                                          <h4 class="m-0 text-secondary">Liked by 3372 people</h4>
+                                    </div>
+                              </section>
+                        </article>
+                  </section>
+            </section>
+      </main>
+      <footer class="colored-section">
+            <section class="footer width-wrapper">
+                  <section class="logo">
+                        <a href="index.html">
+                              <img src="images/logo.png" alt="logo">
+                        </a>
+                  </section>
+                  <section class="flex">
+                        <a aria-label="Website developer Github profile" href="https://github.com/NikosMakris713">
+                              <i class="fab fa-github fa-2x"></i>
+                        </a>
+                  </section>
+            </section>
+            <a aria-label="Website developer Github profile" href="https://github.com/NikosMakris713">
+                  <h5 class="heading-centered m-0">Developed by Nikos Makris713</h5>
+            </a>
+      </footer>
+</body>
+
+</html>

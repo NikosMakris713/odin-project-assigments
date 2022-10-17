@@ -1,0 +1,358 @@
+/** Set default styles */
+
+* {
+	font-family: 'Montserrat', sans-serif;
+	color: #212529;
+	font-size: 1.6 rem;
+	box-sizing: border-box;
+}
+
+::selection {
+	background-color: #33319f;
+	color: #faf5f0;
+}
+
+html {
+	font-size: 62.5%;
+}
+h1 {
+	font-size: 3.2rem;
+}
+h2 {
+	font-size: 2.4rem;
+}
+h3 {
+	font-size: 2rem;
+}
+h4 {
+	font-size: 1.6rem;
+}
+h5 {
+	font-size: 1.4rem;
+}
+h6 {
+	font-size: 1.2rem;
+}
+
+p {
+	font-size: 1.6rem;
+	font-weight: 500;
+}
+a {
+	text-decoration: none;
+}
+
+header a:hover,
+footer a:hover,
+.topnav .active,
+#menu-elements-mobile .active,
+a:hover,
+a:active {
+	color: #33319f;
+}
+
+body {
+	margin: 0;
+	display: grid;
+	min-height: 100vh;
+	grid-template-rows: max-content auto max-content;
+	row-gap: 6.4rem;
+}
+
+img {
+	width: 100%;
+	object-fit: contain;
+}
+
+button {
+	cursor: pointer;
+}
+
+header {
+	border-bottom: 1px solid #e1ddd8;
+}
+
+footer {
+	border-top: 1px solid #e1ddd8;
+}
+
+main {
+	display: grid;
+	row-gap: 4rem;
+}
+
+header {
+	position: -webkit-sticky;
+	z-index: 9;
+	position: sticky;
+	top: 0;
+}
+
+.topnav,
+.footer {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.topnav a,
+.footer a {
+	font-size: 1.8rem;
+	font-weight: 600;
+	padding: 1.4rem 1.6rem;
+	color: #6b7280;
+}
+
+@media screen and (min-width: 1101px) {
+	#navigation-mobile {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 1100px) {
+	#navigation-desktop {
+		display: none;
+	}
+}
+
+/** End set default styles **/
+
+/** Set reusable styles */
+
+.heading-centered {
+	text-align: center;
+}
+
+.m-0 {
+	margin: 0;
+}
+.accent {
+	color: #ce973e;
+}
+
+.text-secondary {
+	color: #606060;
+	font-weight: 600;
+}
+
+.colored-section {
+	background-color: #faf5f0;
+	padding: 2.4rem;
+}
+
+.responsive-grid {
+	width: 100%;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+	gap: 2.6rem;
+}
+
+.width-wrapper {
+	max-width: 120rem;
+	padding: 0 2.4rem;
+	margin: 0 auto;
+	width: 100%;
+}
+
+/** End set reusable styles */
+
+/** Set styles for recipes **/
+
+.recipe-image {
+	border-radius: 1.6rem 1.6rem 0 0;
+}
+
+.image-infobar-container {
+	display: flex;
+	flex-direction: column;
+}
+
+.actions-container {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+.actions {
+	display: flex;
+	column-gap: 1.6rem;
+	justify-content: end;
+}
+
+@media screen and (min-width: 674px) {
+	.single-recipe .image-infobar-container {
+		position: -webkit-sticky;
+		position: sticky;
+		align-self: flex-start;
+		top: 13rem;
+	}
+}
+
+.recipe-image {
+	border-radius: 1.6rem 1.6rem 0 0;
+}
+
+.recipe-suggestions {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	column-gap: 3.2rem;
+}
+
+.recipe-details {
+	display: grid;
+	row-gap: 0.8rem;
+}
+
+.recipe-tabs {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+
+.recipe-tab {
+	font-size: 1.4rem;
+	color: #33319f;
+	font-weight: 600;
+	padding: 0.4rem;
+	border: 1px solid #33319f;
+	background-color: #faf5f0;
+}
+
+.recipe-tab:nth-child(2) {
+	border-left: 0;
+	border-right: 0;
+}
+
+.recipe-tab.active {
+	background-color: #33319f;
+	color: #ffff;
+	border: 1px solid #33319f;
+}
+
+.social-action {
+	background-color: transparent;
+	border: none;
+}
+
+.recipe-tabs-container {
+	display: grid;
+	row-gap: 2.4rem;
+	grid-template-rows: min-content auto;
+	border-radius: 1.6rem;
+}
+
+#ingredients-table,
+#nutrition-table {
+	border-collapse: collapse;
+}
+
+#ingredients-table th,
+#nutrition-table th {
+	text-align: left;
+	font-size: 1.6rem;
+	padding: 0 0 0.8rem 0.4rem;
+}
+
+#ingredients-table td,
+#nutrition-table td {
+	font-size: 1.2rem;
+	padding: 0.8rem 0 0 0.4rem;
+	font-weight: 700;
+	border-bottom: 1px solid #212529;
+}
+
+.infobar {
+	display: grid;
+	row-gap: 0.8rem;
+	border-radius: 0 0 1.6rem 1.6rem;
+}
+
+.recipes-reccomendations .infobar {
+	height: 100%;
+}
+
+#steps-content {
+	display: grid;
+	row-gap: 1.6rem;
+}
+/** End set styles for recipe reccomendations **/
+
+/** Set styles for mobile navigation **/
+
+#navigation-mobile li {
+	list-style: none;
+	font-size: 20px;
+	font-weight: 500;
+}
+
+.hamburger-lines {
+	cursor: pointer;
+}
+
+#navigation-mobile .hamburger-lines {
+	display: block;
+	height: 26px;
+	width: 32px;
+	z-index: 2;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+#navigation-mobile .hamburger-lines .line {
+	display: block;
+	height: 4px;
+	width: 100%;
+	border-radius: 10px;
+	background: #0e2431;
+}
+
+#line1 {
+	transform-origin: 0% 0%;
+	transition: transform 0.4s ease-in-out;
+}
+
+#line2 {
+	transition: transform 0.2s ease-in-out;
+}
+
+#line3 {
+	transform-origin: 0% 100%;
+	transition: transform 0.4s ease-in-out;
+}
+
+#menu-elements-mobile {
+	transform: translate(-100%);
+	background-color: #ffff;
+	position: fixed;
+	top: 12.2rem;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	transition: transform 0.5s ease-in-out;
+	height: calc(100vh - 12.2rem);
+	justify-content: center;
+	align-items: center;
+	row-gap: 1.2rem;
+}
+
+.clicked-line1 {
+	transform: rotate(45deg);
+}
+
+.clicked-line2 {
+	transform: scaleY(0);
+}
+
+.clicked-line3 {
+	transform: rotate(-45deg);
+}
+
+.clicked-menu-elements-mobile {
+	transform: translateX(0) !important;
+}
+
+#menu-elements-mobile a {
+	font-size: 1.8rem;
+	font-weight: 500;
+}
+
+/** End set styles for mobile navigation **/

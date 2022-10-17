@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link href="font-awesome/css/all.min.css" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+      <link href="css/styles.css" rel="stylesheet">
+      <script src="js/script.js" defer></script>
+      <link rel="icon" type="image/x-icon" href="/images/favicon.png">
+      <title>Pasta Primavera</title>
+</head>
+
+<body>
+      <header>
+            <nav id="navigation-desktop" class="colored-section">
+                  <section class="topnav width-wrapper">
+                        <section class="logo">
+                              <a href="index.html">
+                                    <img src="images/logo.png" alt="logo">
+                              </a>
+                        </section>
+                        <section class="menu-elemets">
+                              <a href="pasta-primavera.html">Pasta primavera</a>
+                              <a href="easy-honey-meatballs.html">Easy honey meatballs</a>
+                              <a href="kaema-curry.html">Kaema-curry</a>
+                        </section>
+                  </section>
+            </nav>
+
+            <nav id="navigation-mobile" class="colored-section">
+                  <section class="topnav width-wrapper">
+                        <section class="logo">
+                              <a href="index.html">
+                                    <img src="images/logo.png" alt="logo">
+                              </a>
+                        </section>
+                        <section class="hamburger-lines" onclick="clickMenu()">
+                              <span class="line" id="line1"></span>
+                              <span class="line" id="line2"></span>
+                              <span class="line" id="line3"></span>
+                        </section>
+                  </section>
+                  <section id="menu-elements-mobile" class="main-background">
+                        <a href="pasta-primavera.html">Pasta primavera</a>
+                        <a href="easy-honey-meatballs.html">Easy honey meatballs</a>
+                        <a href="kaema-curry.html">Kaema-curry</a>
+                  </section>
+            </nav>
+      </header>
+      <main class="width-wrapper">
+
+            <div class='responsive-grid single-recipe'>
+                  <div class='image-infobar-container'>
+                        <img class="recipe-image" src="images/pasta-primavera.jpeg" alt="Pasta primavera dish">
+                        <div class="colored-section infobar">
+                              <h3 class="m-0">Pasta primavera</h3>
+                              <div class='actions-container'>
+                                    <h4 class='m-0 text-secondary'>By Marco Pierre White</h4>
+                                    <div class='actions'>
+                                          <button aria-label="like button" class="social-action">
+                                                <i class="far fa-heart fa-lg"></i>
+                                          </button>
+                                          <button aria-label="messages button" class="social-action">
+                                                <i class="fa-regular fa-message fa-lg"></i>
+                                          </button>
+                                          <button aria-label="add to collection button" class="social-action">
+                                                <i class="fa-solid fa-book fa-lg"></i>
+                                          </button>
+                                          <button aria-label="share repice button" class="social-action">
+                                                <i class="fa-solid fa-share fa-lg"></i>
+                                          </button>
+                                          <button aria-label="more options button" class="social-action">
+                                                <i class="fa-solid fa-ellipsis-vertical fa-lg"></i>
+                                          </button>
+                                    </div>
+                              </div>
+                        </div>
+                  </div>
+                  <div class='colored-section recipe-tabs-container'>
+                        <div class=' recipe-tabs'>
+                              <button class="recipe-tab active">Ingredients</button>
+                              <button class="recipe-tab">Steps</button>
+                              <button class="recipe-tab">Nutrition</button>
+                        </div>
+                        <div id='ingredients-content'>
+                              <table id='ingredients-table' style=" width: 100%;">
+                                    <tbody>
+                                          <thead>
+                                                <th scope="col">Measurment</th>
+                                                <th scope="col">Ingredient</th>
+                                          </thead>
+                                          <tr class='ingredient-measurement'>
+                                                <td data-label="Measurment">160 g </td>
+                                                <td data-label="Ingredient">pasta</td>
+                                          </tr>
+                                          <tr class='ingredient-measurement'>
+                                                <td data-label="Measurment">5 stalks</td>
+                                                <td data-label="Ingredient">green asparagus</td>
+                                          </tr>
+                                          <tr class='ingredient-measurement'>
+                                                <td data-label="Measurment">1</td>
+                                                <td data-label="Ingredient">carrot</td>
+                                          </tr>
+                                          <tr class='ingredient-measurement'>
+                                                <td data-label="Measurment">½</td>
+                                                <td data-label="Ingredient">leek</td>
+                                          </tr>
+                                          <tr class='ingredient-measurement'>
+                                                <td data-label="Measurment">100 g</td>
+                                                <td data-label="Ingredient">broccoli</td>
+                                          </tr>
+                                          <tr class='ingredient-measurement'>
+                                                <td data-label="Measurment">100 g</td>
+                                                <td data-label="Ingredient">green beans</td>
+                                          </tr>
+                                          <tr class='ingredient-measurement'>
+                                                <td data-label="Measurment">¼</td>
+                                                <td data-label="Ingredient">yellow bell pepper</td>
+                                          </tr>
+                                          <tr class='ingredient-measurement'>
+                                                <td data-label="Measurment">10</td>
+                                                <td data-label="Ingredient">cherry tomatoes</td>
+                                          </tr>
+                                          <tr class='ingredient-measurement'>
+                                                <td data-label="Measurment">4 cloves</td>
+                                                <td data-label="Ingredient">garlic</td>
+                                          </tr>
+                                          <tr class='ingredient-measurement'>
+                                                <td data-label="Measurment">1</td>
+                                                <td data-label="Ingredient">chili</td>
+                                          </tr>
+                                          <tr class='ingredient-measurement'>
+                                                <td data-label="Measurment">10 g</td>
+                                                <td data-label="Ingredient">basil</td>
+                                          </tr>
+                                          <tr class='ingredient-measurement'>
+                                                <td data-label="Measurment">½</td>
+                                                <td data-label="Ingredient">lemon</td>
+                                          </tr>
+                                          <tr class='ingredient-measurement'>
+                                                <td data-label="Measurment">125 ml</td>
+                                                <td data-label="Ingredient">heavy cream</td>
+                                          </tr>
+                                          <tr class='ingredient-measurement'>
+                                                <td data-label="Measurment">85 ml</td>
+                                                <td data-label="Ingredient">pasta water</td>
+                                          </tr>
+                                          <tr class='ingredient-measurement'>
+                                                <td data-label="Measurment">85 g</td>
+                                                <td data-label="Ingredient">salt</td>
+                                          </tr>
+                                          <tr class='ingredient-measurement'>
+                                                <td data-label="Measurment">85 g</td>
+                                                <td data-label="Ingredient">pepper</td>
+                                          </tr>
+                                          <tr class='ingredient-measurement'>
+                                                <td data-label="Measurment">85 g</td>
+                                                <td data-label="Ingredient">olive oil (for frying)</td>
+                                          </tr>
+                                          <tr class='ingredient-measurement'>
+                                                <td data-label="Measurment">85 g</td>
+                                                <td data-label="Ingredient">Parmesan cheese (for serving)</td>
+                                          </tr>
+                                    </tbody>
+                              </table>
+                        </div>
+                        <div id='steps-content'>
+                              <section class='recipe-step'>
+                                    <h4>Step 1</h4>
+                                    <p>Bring a large pot of heavily salted water to a boil. Trim asparagus and cut into pieces approx.
+                                          1 in. / 3 cm long. Peel and slice carrot. Cut bell pepper into thin strips and cut the strips in half.
+                                          Trim green beans and cut in half. Divide broccoli into small florets. Peel and slice garlic and slice chili.
+                                          Roughly chop parsley and basil. Thinly slice leek. Zest lemon.
+                                    </p>
+                              </section>
+                              <section class='recipe-step'>
+                                    <h4>Step 2</h4>
+                                    <p>
+                                          Heat olive oil in a large frying pan over medium heat. Add garlic, chili, carrot, leeks, and bell pepper to the pan and sauté,
+                                          stirring occasionally, until the vegetables soften (don’t let them get brown), approx. 7 – 10 min. Season with salt and a generous
+                                          amount of black pepper. Add pasta to boiling, salted water.
+                                    </p>
+                              </section>
+                              <section class='recipe-step'>
+                                    <h4>Step 3</h4>
+                                    <p>
+                                          Approx. 5 min. before the pasta cooking time is up, add green beans and asparagus to the pot. Let cook for approx. 3 min.,
+                                          then add broccoli florets. Drain the pasta and vegetables, reserving some of the pasta water in a small bowl or mug.
+                                    </p>
+                              </section>
+                              <section class='recipe-step'>
+                                    <h4>Step 4</h4>
+                                    <p>
+                                          Add whole cherry tomatoes, heavy cream, pasta water, and the drained pasta and vegetables to the pan and turn up the heat to the highest setting.
+                                          Toss the pasta and vegetables until the sauce thickens slightly and starts to coat the pasta, approx. 2 min. Add lemon zest, basil, parsley and stir.
+                                          Serve immediately topped with Parmesan cheese and more freshly ground black pepper, if desired. Enjoy!
+                                    </p>
+                              </section>
+                        </div>
+                        <div id='nutrition-content'>
+                              <table id='nutrition-table' style=" width: 100%;">
+                                    <tbody>
+                                          <thead>
+                                                <th scope="col">Nutrients</th>
+                                                <th scope="col">Amount</th>
+                                          </thead>
+                                          <tr class='nutrient-value'>
+                                                <td data-label="Measurment">Total calories</td>
+                                                <td data-label="Ingredient">720</td>
+                                          </tr>
+                                          <tr class='nutrient-value'>
+                                                <td data-label="Measurment">Fat</td>
+                                                <td data-label="Ingredient">36g</td>
+                                          </tr>
+                                          <tr class='nutrient-value'>
+                                                <td data-label="Measurment">Protein</td>
+                                                <td data-label="Ingredient">20g</td>
+                                          </tr>
+                                          <tr class='nutrient-value'>
+                                                <td data-label="Measurment">Carb</td>
+                                                <td data-label="Ingredient">81g</td>
+                                          </tr>
+                                    </tbody>
+                              </table>
+                        </div>
+                  </div>
+            </div>
+            <section class="recipe-suggestions-container">
+                  <h2 class='heading-centered accent'>You might also want to try</h2>
+                  <section class='recipe-suggestions'>
+                        <article class="image-infobar-container">
+                              <img class="recipe-image" src="images/easy-honey-meatballs.jpeg" alt="Easy honey meatballs dish">
+                              <section class="colored-section infobar">
+                                    <div class="recipe-details">
+                                          <a href=''>
+                                                <h3 class="m-0">Easy honey - soy glazed meatballs</h3>
+                                          </a>
+                                          <h4 class="m-0 text-secondary">By Marco Alain Ducasse</h4>
+                                          <h4 class="m-0 text-secondary">Liked by 3372 people</h4>
+                                    </div>
+                              </section>
+                        </article>
+
+                        <article class="image-infobar-container">
+                              <img class="recipe-image" src="images/keema-curry.jpeg" alt="A pasta primavera dish">
+                              <section class="colored-section infobar">
+                                    <div class="recipe-details">
+                                          <a href='kaema-curry.html'>
+                                                <h3 class="m-0">Keema curry</h3>
+                                          </a>
+                                          <h4 class="m-0 text-secondary"> By Martin Berasategui</h4>
+                                          <h4 class="m-0 text-secondary">Liked by 3001 people</h4>
+                                    </div>
+                              </section>
+                        </article>
+                  </section>
+            </section>
+      </main>
+      <footer class="colored-section">
+            <section class="footer width-wrapper">
+                  <section class="logo">
+                        <a href="index.html">
+                              <img src="images/logo.png" alt="logo">
+                        </a>
+                  </section>
+                  <section class="flex">
+                        <a aria-label="Website developer Github profile" href="https://github.com/NikosMakris713">
+                              <i class="fab fa-github fa-2x"></i>
+                        </a>
+                  </section>
+            </section>
+            <a aria-label="Website developer Github profile" href="https://github.com/NikosMakris713">
+                  <h5 class="heading-centered m-0">Developed by Nikos Makris713</h5>
+            </a>
+      </footer>
+</body>
+
+</html>
