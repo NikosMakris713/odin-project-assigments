@@ -1,0 +1,184 @@
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Los Angeles Lakers Schedule</title>
+      <link rel="shortcut icon" type="image/x-icon" href="images/lakers70x70.webp">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+      <link rel="stylesheet" type="text/css" href="main.css" />
+      <link rel="stylesheet" type="text/css" href="schedule.css" />
+      <script type='text/javascript' src='app.js' defer></script>
+      <script type='text/javascript' src='modal.js' defer></script>
+</head>
+
+<body>
+
+      <nav class="dark-background">
+            <div class="website-container navbar">
+                  <section class="logo">
+                        <a href="index.html">
+                              <img style="width: 100px" src="images/logo.webp" alt="Los Angeles Lakers Team Crest" />
+                        </a>
+                  </section>
+                  <section id="menu">
+                        <a tabindex='0' class='menu-item' href="team.html">Team</a>
+                        <a class='menu-item' href="schedule.html">Schedule</a>
+                  </section>
+            </div>
+      </nav>
+      <main>
+            <section class="team-schedule">
+                  <h1 class='center-text accent'>Los Angeles Lakers Schedule 2021-22</h1>
+                  <div class="dark-background website-container">
+                        <table id='schedule-table' style=" width: 100%;" cellpadding="12px">
+                              <tbody>
+                                    <thead>
+                                          <th scope="col">Date</th>
+                                          <th scope="col">Arena</th>
+                                          <th scope="col">Opponent</th>
+                                          <th scope="col">Score</th>
+                                    </thead>
+                                    <tr tabindex='1' class='game-info'>
+                                          <td data-label="Date">20/10/21</td>
+                                          <td data-label="Arena">Chase Center</td>
+                                          <td data-label="Opponent">Warriors</td>
+                                          <td data-label="Score" class='match-lost'>121 - 114</td>
+                                    </tr>
+                                    <tr tabindex='2' class='game-info'>
+                                          <td data-label="Date">23/10/21</td>
+                                          <td data-label="Arena">Footprint Center</td>
+                                          <td data-label="Opponent">Suns</td>
+                                          <td data-label="Score" class='match-lost'>115 - 105</td>
+                                    </tr>
+                                    <tr tabindex='3' class='game-info'>
+                                          <td data-label="Date">25/10/21</td>
+                                          <td data-label="Arena">FedExForum</td>
+                                          <td data-label="Opponent" data-label="Arena">Grizzlies</td>
+                                          <td data-label="Score" class='match-won'>121 - 118</td>
+                                    </tr>
+                                    <tr tabindex='4' class='game-info'>
+                                          <td data-label="Date">27/10/21</td>
+                                          <td data-label="Arena">AT&T Center</td>
+                                          <td data-label="Opponent">Spurs</td>
+                                          <td data-label="Score" class='match-won'>125 - 121 OT</td>
+                                    </tr>
+                                    <tr tabindex='5' class='game-info'>
+                                          <td data-label="Date">28/10/21</td>
+                                          <td data-label="Arena">Paycom Center</td>
+                                          <td data-label="Opponent">Thunder</td>
+                                          <td data-label="Score" class='match-lost'>123 - 115</td>
+                                    </tr>
+                                    <tr tabindex='6' class='game-info'>
+                                          <td data-label="Date">30/10/21</td>
+                                          <td data-label="Arena">Rocket Mortgage FieldHouse</td>
+                                          <td data-label="Opponent">Cavaliers</td>
+                                          <td data-label="Score" class='match-won'>113 - 101</td>
+                                    </tr>
+                                    <tr tabindex='7' class='game-info'>
+                                          <td data-label="Date">01/11/21</td>
+                                          <td data-label="Arena">Toyota Center</td>
+                                          <td data-label="Opponent">Rockets</td>
+                                          <td data-label="Score" class='match-won'>95 - 85</td>
+                                    </tr>
+                                    <tr tabindex='8' class='game-info'>
+                                          <td data-label="Date">03/11/21</td>
+                                          <td data-label="Arena">Toyota Center</td>
+                                          <td data-label="Opponent">Rockets</td>
+                                          <td data-label="Score" class='match-won'>119 - 117</td>
+                                    </tr>
+                                    <tr tabindex='9' class='game-info'>
+                                          <td data-label="Date">05/11/21</td>
+                                          <td data-label="Arena">Paycom Center</td>
+                                          <td data-label="Opponent">Thunder</td>
+                                          <td data-label="Score" class='match-lost'>107 - 104</td>
+                                    </tr>
+                              </tbody>
+                        </table>
+                        <button id="myBtn" class='spacer' type="button">Find a ticket</button>
+                  </div>
+
+                  </div>
+
+                  <div id="myModal" class="modal">
+                        <div class="modal-content">
+                              <span class="close">&times;</span>
+                              <section>
+                                    <h3 class='center-text'>Match Details</h3>
+                                    <table id='game-details' style=" width: 100%;" cellpadding="12px">
+                                          <tbody>
+                                                <thead>
+                                                      <th scope="col">Date and time</th>
+                                                      <th scope="col">Arena</th>
+                                                      <th scope="col">Tickets</th>
+                                                      <th scope="col">Watch live</th>
+                                                </thead>
+                                                <tr class='game-info'>
+                                                      <td data-label="Date and time">20/10/21</td>
+                                                      <td data-label="Arena">Chase Center</td>
+                                                      <td data-label="Tickets"><a href='https://www.axs.com/venues/101242/crypto-com-arena-los-angeles-tickets'>axs</a></td>
+                                                      <td data-label="Watch live"><a href='https://www.espnplayer.com/packages'>ESPN</td>
+                                                </tr>
+                                          </tbody>
+                                    </table>
+                              </section>
+                        </div>
+
+            </section>
+            </div>
+      </main>
+
+      <footer class='dark-background'>
+            <div class='website-container'>
+                  <div class='responsive-grid'>
+                        <section class='footer-list'>
+                              <h3>Game Day</h3>
+                              <ul>
+                                    <li>Game Notes</li>
+                                    <li>Gameday Archive</li>
+                                    <li>Injury Report</li>
+                                    <li>Laker Girls</li>
+                                    <li>Lakers Ticket Exchange</li>
+                                    <li>Tickets</li>
+                              </ul>
+                        </section>
+                        <section class='footer-list'>
+                              <h3>Broadcast</h3>
+                              <ul>
+                                    <li>Where to watch</li>
+                                    <li>Schedule</li>
+                                    <li>Audio League Pass</li>
+                                    <li>NBA League Pass</li>
+                                    <li>Broadcasters</li>
+                              </ul>
+                        </section>
+                        <section class='footer-list'>
+                              <h3>Media Partners</h3>
+                              <ul>
+                                    <li>Spectrum SportsNet</li>
+                                    <li>710 ESPNLA</li>
+                                    <li>Lakers Radio Network</li>
+                              </ul>
+                        </section>
+                        <section class='footer-list'>
+                              <h3>Social Media</h3>
+                              <ul>
+                                    <li>Social Hub</li>
+                                    <li>Twitter</li>
+                                    <li>Instagram</li>
+                                    <li>Snapchat</li>
+                                    <li>Facebook</li>
+                                    <li>Lakers Email News</li>
+                              </ul>
+                        </section>
+                  </div>
+            </div>
+      </footer>
+
+</body>
+
+</html>

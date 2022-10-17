@@ -1,0 +1,290 @@
+/* Set default styles */
+
+* {
+	box-sizing: border-box;
+	color: #fff;
+	font-family: 'Ubuntu', sans-serif;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+::selection {
+	background-color: #fdb927;
+	color: purple;
+}
+
+h1 {
+	font-size: 3.2rem;
+}
+
+h2 {
+	font-size: 2.8rem;
+}
+
+h3 {
+	font-size: 2.4rem;
+}
+h4 {
+	font-size: 2rem;
+}
+
+h5 {
+	font-size: 1.6rem;
+}
+
+h6 {
+	font-size: 1.2rem;
+}
+p {
+	font-size: 1.6rem;
+}
+
+a {
+	font-size: 1.6rem;
+	text-decoration: none;
+}
+
+a:hover,
+a:active,
+a:focus {
+	color: #fdb927;
+}
+
+button {
+	background-color: #fff;
+	border: none;
+	font-size: 1.6rem;
+	font-weight: 500;
+	padding: 0.8rem 1.2rem;
+	color: #000;
+	width: 24rem;
+	height: 5.4rem;
+}
+
+button:hover {
+	background-color: #fdb927;
+	color: purple;
+}
+
+img {
+	width: 100%;
+	object-fit: contain;
+}
+
+body {
+	margin: 0;
+	display: grid;
+	grid-template-rows: min-content auto min-content;
+	row-gap: 8rem;
+	background-color: #232323;
+	color: #fff;
+}
+
+main {
+	background-color: #232323;
+	display: grid;
+	row-gap: 4.6rem;
+}
+
+nav {
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+	z-index: 999;
+}
+
+footer .responsive-grid {
+	grid-template-columns: auto auto auto auto;
+	justify-content: space-between;
+}
+
+nav .website-container,
+footer .website-container {
+	max-width: 144.8rem;
+}
+
+/* End set default styles */
+
+/* Set reusable styles */
+
+.center-text {
+	text-align: center;
+}
+
+.active {
+	color: #fdb927;
+}
+
+.accent {
+	color: #fdb927;
+}
+
+.spacer {
+	margin: 2.4rem 0;
+}
+
+.dark-background {
+	background-color: #000;
+}
+
+.website-container {
+	max-width: 140rem;
+	width: 100%;
+	margin: 0 auto;
+	padding: 3.2rem 2.4rem;
+}
+
+.responsive-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+	gap: 4rem;
+	max-width: 100%;
+}
+
+.flex-text > * {
+	margin: 0;
+}
+
+.flex-text {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	row-gap: 2.8rem;
+}
+
+/* Set reusable styles */
+
+/* Set navigation bar and footer styles */
+
+#menu {
+	display: flex;
+	column-gap: 2.4rem;
+}
+
+#menu a {
+	font-size: 2rem;
+}
+
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.footer-list li {
+	font-size: 1.4rem;
+	list-style: none;
+	margin: 0.8rem 0;
+}
+
+.footer-list ul {
+	padding: 0;
+}
+
+.hero-image {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+		url('images/homepage-hero-image.jpg');
+	height: calc(100vh - 13.47rem);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	margin-top: -8rem;
+}
+
+/* End set navigation bar and footer styles */
+
+/* Set member card styles */
+
+.member-card {
+	border: 1px solid #303030;
+}
+
+.member-information-list {
+	opacity: 0;
+	transition: opacity 300ms ease-out;
+}
+
+.member-card:hover .member-information-list,
+.member-card:focus .member-information-list {
+	opacity: 1;
+	transition: opacity 300ms ease-in;
+}
+
+.member-card:hover,
+.member-card:focus {
+	border: 1px solid #fdb927;
+	outline: none;
+}
+
+.member-card:hover img,
+.member-card:focus img {
+	opacity: 0.5;
+}
+
+.member-picture img {
+	max-height: calc(100vh - 30rem);
+}
+
+.member-card-header {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1.6rem;
+	padding: 1.6rem 1.6rem 0 1.6rem;
+}
+
+.member-number {
+	font-size: 7rem;
+	padding-right: 1.6rem;
+	border-right: 1px solid #303030;
+}
+
+.member-card-header-name {
+	font-size: 3.2rem;
+}
+
+.member-position {
+	color: #c0c0c0;
+}
+
+.member-firstName {
+	font-weight: 300;
+}
+
+.member-lastName {
+	font-weight: 500;
+}
+
+.member-picture {
+	position: relative;
+	margin: 0;
+}
+
+.member-information-list {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	padding: 0 4rem;
+}
+
+.member-information-list-item {
+	display: flex;
+	justify-content: space-between;
+	padding: 0.8rem 0;
+	border-bottom: 1px solid #303030;
+	font-size: 1.4rem;
+	color: #c0c0c0;
+}
+
+.team-members .responsive-grid {
+	gap: 0.8rem;
+}
+
+.member-position {
+	font-size: 1.6rem;
+	flex-basis: 100%;
+}
+
+/* End set member card styles */
